@@ -39,8 +39,8 @@ for alpha in alpha_vec:
 ```
 ### Additional resources
 
-For a method-focused code base, we provide a python version of the  _Selective Multiple Testing_ in the Github repository (https://github.com/yfan7/panel_CPD/tree/master) for our accompanying paper _Large Dimensional Change Point Detection with
-FWER Control as Automatic Stopping_(https://drive.google.com/file/d/15SotyMqpWBUTrwaCpzNGron2F4uz1wdL/view).
+For a method-focused code base, we provide a python version of the [Selective Multiple Testing_ in the Github repository](https://github.com/yfan7/panel_CPD/tree/master) for our accompanying paper [Large Dimensional Change Point Detection with
+FWER Control as Automatic Stopping](https://drive.google.com/file/d/15SotyMqpWBUTrwaCpzNGron2F4uz1wdL/view).
 
 ### Usage
 

@@ -46,10 +46,10 @@ FWER Control as Automatic Stopping](https://drive.google.com/file/d/15SotyMqpWBU
 
 To cite this code, in addition to the data sources, please use the following citation:
 ```
-@article{pelger2022inference,
-  title={Inference for Large Panel Data with Many Covariates},
+@article{pelger2022selective,
+  title={Selective Multiple Testing: Inference for Large Panels with Many Covariates},
   author={Pelger, Markus and Zou, Jiacheng},
-  journal={arXiv preprint arXiv:2301.00292},
+  journal={Available at SSRN 4315891},
   year={2022}
 }
 ```

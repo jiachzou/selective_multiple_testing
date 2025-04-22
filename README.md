@@ -8,10 +8,14 @@ We provide a one-stop collection of resources on covariate selective inference w
  2. Covariates: $X=R^{660 \times 114}$ asset pricing high-minus-low factors that are downloaded and processed from [Hou, K., Xue, C. and Zhang, L., 2020. Replicating anomalies. The Review of financial studies, 33(5), pp.2019-2133](https://global-q.org/index.html). The covariates' dimension is 114 and there are 660 monthly observations. We regress out the market factor from each of the individual factors.
 
 #### R code:
+
+##### empirics:
   * step1: `multiple_fixed_window.R` performs a rolling window regression to generate a $P=R^{114 \times 243}$ matrix for each rolling window. Specifically, `posi_lognorm_pval_enforce_dimension` admits a $(X,Y)$ tuple and optional priors, and returns the post-LASSO selection inference valid p-values from [Jason D. Lee. Dennis L. Sun. Yuekai Sun. Jonathan E. Taylor. "Exact post-selection inference, with application to the lasso." Ann. Statist. 44 (3) 907 - 927, June 2016](https://projecteuclid.org/journals/annals-of-statistics/volume-44/issue-3/Exact-post-selection-inference-with-application-to-the-lasso/10.1214/15-AOS1371.full);
   * step2: `select.R` performs the _Selective Multiple Testing_ selection described in the paper;
   * step3: `eval_performance_multiple_fixed_window.R` performs evaluations described in the paper.
 
+##### simulations:
+  * `simulation.R` is a self-contained R script that 
 #### python code on selection:
   * python: `funs.py` provides minimal stand-alone function that only requires `pandas` and `numpy` to perform our _Selective Multiple Testing_ selection method given a matrix of p-values, controlling for Family-Wise Error Rate (FWER).
 

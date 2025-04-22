@@ -1,7 +1,7 @@
 ## Selective Multiple Testing
 
 ### Context
-We provide a one-stop collection of resources on covariate selective inference with Family-Wise Error Rate (FWER) control on large panel asset pricing data and model, as described in [Selective Multiple Testing: Inference for Large Panels with Many Covariates](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=4315891). Specifically, we enable users to perform the rolling-window estimations described in \S 7.3 of the paper. Any constant window model or alternative window size can be produced by changing the window parameter or estimation in the code.
+We provide a one-stop collection of resources on covariate selective inference with Family-Wise Error Rate (FWER) control on large panel asset pricing data and model, as described in [Selective Multiple Testing: Inference for Large Panels with Many Covariates](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=4315891). Specifically, we enable users to perform the rolling-window estimations described in $\S$ 7.3 of the paper. Any constant window model or alternative window size can be produced by changing the window parameter or estimation in the code.
 
 #### data: 
  1. Response variables: $Y=R^{660 \times 243}$ test portfolios excess returns downloaded and processed from [Kenneth French's website](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html). The cross-section size is 243 as test portfolios and there are 660 monthly observations. We regress out the market factor from each of the invidiual factors.

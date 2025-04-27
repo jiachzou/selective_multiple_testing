@@ -1,6 +1,6 @@
 ## Selective Multiple Testing
 
-Authors: [Markus Pelger](https://mpelger.people.stanford.edu) mpelger@stanford.edu,  [Jiacheng Zou](https://jiachzou.github.io) jiachengzou@alumni.stanford.edu 
+Authors: [Markus Pelger](https://mpelger.people.stanford.edu)(mpelger@stanford.edu),  [Jiacheng Zou](https://jiachzou.github.io)(jiachengzou@alumni.stanford.edu)
 
 ### Context
 We provide a one-stop collection of resources on covariate selective inference with Family-Wise Error Rate (FWER) control on large panel asset pricing data and model, as described in [Selective Multiple Testing: Inference for Large Panels with Many Covariates](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=4315891). Specifically, we enable users to perform the rolling-window estimations described in $\S$ 7.3 of the paper. Any constant window model or alternative window size can be produced by changing the window parameter or estimation in the code.

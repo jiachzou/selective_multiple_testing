@@ -28,22 +28,17 @@ To run the code, we can select features subject to FWER target of $\alpha$:
 ```
 import numpy as np
 import pandas as pd
-
 J, N = log_pval_matrix.shape
 alpha_vec = [0.00001,0.01,0.05] # the FWER thresholds you want to try
 pmt_rejection_table =panel_unordered(log_pval_matrix)
 rho=pmt_rejection_table['rho'].unique()[0] # the panel cohesiveness coefficient
-
 for alpha in alpha_vec:
-
 	selected_panel_multiple_testing =np.sort(pmt_rejection_table.index[pmt_rejection_table['rho_inv.N.p_1']<=alpha]).tolist()
-
 	selected_Bonferroni_multiple_testing =np.sort(pmt_rejection_table.index[pmt_rejection_table['p_1']<=alpha/(J*N)]).tolist()
-
 ```
 ### Additional resources
 
-For a method-focused code base, we provide a python version of the [Selective Multiple Testing_ in the Github repository](https://github.com/yfan7/panel_CPD/tree/master) for our accompanying paper [Large Dimensional Change Point Detection with
+For a method-focused code base, we provide a python version of the _Selective Multiple Testing_ in the [Github repository](https://github.com/yfan7/panel_CPD/tree/master) for our accompanying paper [Large Dimensional Change Point Detection with
 FWER Control as Automatic Stopping](https://drive.google.com/file/d/15SotyMqpWBUTrwaCpzNGron2F4uz1wdL/view).
 
 ### Usage
